@@ -1,0 +1,16 @@
+#20240608-Task 1
+#To cope files from a Linux system to a disk
+
+#Check block devices
+lsblk
+#Plug the disk into the computer
+lsblk
+# "sudo"  to make commands with administrator permissions
+sudo mount /dev/sdh1 /mnt/mydisk # If mounting the disk is unsuccessful, you can try unmounting it first. 
+#Code like： df -h | grep /mnt/mydisk 
+#sudo lsof /mnt/mydisk
+#sudo umount /mnt/mydisk
+df -i /mnt/mydisk
+cd /mnt/LocaIRAID/20230726/*/lyw0602 # to specify the file path
+ls # to show the files 
+sudo cp -r try1 /mnt/mydisk/ #cope "try1" from "/mnt/LocaIRAID/20230726/*/lyw0602" to mydisk
