@@ -14,3 +14,6 @@ df -i /mnt/mydisk
 cd /mnt/LocaIRAID/20230726/*/lyw0602 # to specify the file path
 ls # to show the files 
 sudo cp -r try1 /mnt/mydisk/ #cope "try1" from "/mnt/LocaIRAID/20230726/*/lyw0602" to mydisk
+
+# To delete the file
+rm -rf /mnt/mydisk/try1failure
